@@ -38,3 +38,13 @@ document.getElementById("2.2output").innerHTML =
 
 console.log('-------2.2.2----------');
 
+let employee = {
+    name: 'John',
+    surname: 'Doe',
+    age: 30,
+    position: 'Manager',
+    sal: '5000'
+}
+console.log('สร้าง object ชื่อ employee',employee);
+
+console.log('-------2.2.3----------');
