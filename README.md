@@ -6,8 +6,8 @@
 - IDE /
 - Framework/Libar /
 ### 2 Data type
-- convert
-- construct and use 
+- convert /
+- construct and use /
 - manage JSON data
 ### 3 Element & Event
 - HTML & JAVASRCIPT
