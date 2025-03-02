@@ -85,3 +85,15 @@ document.getElementById("223output").innerHTML = `
     <strong>Array หลังใช้ Set:</strong> ${uniqueNumbers.join(", ")}`;
 
 console.log('-------2.2.4----------');
+
+let jsonString = '{"name": "Tom", "age": 20, "grade": "A"}';
+let student = JSON.parse(jsonString);
+
+console.log(student);
+console.log(student.name);
+console.log(student.age);
+
+//convert object to json
+let studentObj = { name: "Alice", age: 22, grade: "B" };
+let jsonData = JSON.stringify(studentObj);
+console.log(jsonData);
