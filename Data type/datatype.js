@@ -17,3 +17,24 @@ console.log(String(str),typeof String(str));
 //__________________________________________________
 
 //2.2
+console.log('-------2.2.1----------');
+
+let mylist = ['apple', 'banana', 'cherry'];
+console.log('สร้าง list',mylist);
+
+mylist.push('orange');
+mylist.unshift('grape');
+console.log('เพิ่ม หน้า-ท้าย',mylist);
+
+mylist.pop();
+mylist.shift();
+console.log('ลบ หน้า-ท้าย',mylist);
+
+mylist[1] = 'lemon';
+console.log('แก้ไข',mylist);
+
+document.getElementById("2.2output").innerHTML = 
+    `<strong>อาร์เรย์ปัจจุบัน:</strong> ${mylist.join(", ")}`;
+
+console.log('-------2.2.2----------');
+
