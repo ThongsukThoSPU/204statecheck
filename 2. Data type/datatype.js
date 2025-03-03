@@ -86,14 +86,14 @@ document.getElementById("223output").innerHTML = `
 
 console.log('-------2.2.4----------');
 
-let jsonString = '{"name": "Tom", "age": 20, "grade": "A"}';
-let student = JSON.parse(jsonString);
+let jsonData = `{
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}`;
+let jsonObject = JSON.parse(jsonData); //read
+jsonObject.age = 25; //update
+let jsonStr = JSON.stringify(jsonObject, null, 2); //write
+console.log(jsonStr);
 
-console.log(student);
-console.log(student.name);
-console.log(student.age);
-
-//convert object to json
-let studentObj = { name: "Alice", age: 22, grade: "B" };
-let jsonData = JSON.stringify(studentObj);
-console.log(jsonData);
+document.getElementById("224output").innerHTML = jsonStr;
