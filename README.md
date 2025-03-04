@@ -8,10 +8,10 @@
 ### 2 Data type
 - convert /
 - construct and use /
-- manage JSON data
+- manage JSON data /
 ### 3 Element & Event
-- HTML & JAVASRCIPT
-- Event in JS
+- HTML & JAVASRCIPT /
+- Event in JS w
 - Form and validate data
 ### 4 ฝกการเขียน Pseudocode และ Algorithm
 - Basic Algorithm (ลำดับ - Sequential)
