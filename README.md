@@ -11,8 +11,8 @@
 - manage JSON data /
 ### 3 Element & Event
 - HTML & JAVASRCIPT /
-- Event in JS w
-- Form and validate data
+- Event in JS /
+- Form and validate data /
 ### 4 ฝกการเขียน Pseudocode และ Algorithm
 - Basic Algorithm (ลำดับ - Sequential)
 - Conditional Algorithm (เงื่อนไข - If-Else)
