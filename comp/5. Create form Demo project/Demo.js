@@ -50,9 +50,13 @@ const calculateGPA = () => {
     const score = parseFloat(document.getElementById(sub).value) || 0; //ดึงค่าคะแนนจาก input
     let gradePoint =
       score >= 80 ? 4 : //A
+      // score >= 75 ? 3.5:
       score >= 70 ? 3 : //B
+      // score >= 65 ? 2.5:
       score >= 60 ? 2 : //C
+      // score >= 55 ? 1.5:
       score >= 50 ? 1 : //D
+
       0;                //F
     totalPoints += gradePoint * 3; //คะแนน x หน่วยกิต (แต่ละวิชามี 3 หน่วยกิต) สมมุติ totalPoints = 12 + 9 + 6 + 0 + 12 = 39
     totalCredits += 3;  // เพิ่มหน่วยกิตรวม totalCredits = 3 + 3 + 3 + 3 + 3 = 15

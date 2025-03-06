@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="Demo.css">
 </head>
 <body>
+    <!-- สร้างstateที่list -->
     <h2>Todo list</h2>
     <input id="todo-input" type="text" placeholder="เพิ่มงาน..." />
     <button onclick="addTodo()">เพิ่ม</button>
     <ul id="todo-list"></ul>
 
+    <!-- บอกหน่วยกิต และระดับเกรด -->
     <h2>Student Grade Calculator (JavaScript)</h2>
     <div id="grade-input">
-        <input type="number" placeholder="คะแนนCSI101" id="CSI101"> <br>
-        <input type="number" placeholder="คะแนนCSI102" id="CSI102"> <br>
-        <input type="number" placeholder="คะแนนCSI203" id="CSI203"> <br>
-        <input type="number" placeholder="คะแนนCSI204" id="CSI204"> <br>
-        <input type="number" placeholder="คะแนนCSI305" id="CSI305"> <br>
+        <input type="number" placeholder="คะแนนCSI101" id="CSI101"> <p id="1output"></p> <br>
+        <input type="number" placeholder="คะแนนCSI102" id="CSI102"> <p id="2output"></p> <br>
+        <input type="number" placeholder="คะแนนCSI203" id="CSI203"> <p id="3output"></p> <br>
+        <input type="number" placeholder="คะแนนCSI204" id="CSI204"> <p id="4output"></p> <br>
+        <input type="number" placeholder="คะแนนCSI305" id="CSI305"> <p id="5output"></p> <br>
         <button onclick="calculateGPA()">คำนวณ</button>
     </div>
     <p id="gpa-result"></p>
@@ -26,6 +28,8 @@
     <h2>API fetching</h2>
     <ul id="user-list"></ul>
 
+
+    <!-- สร้างช่องผลลัพ6ช่อง ล็อคได้ทุกช่อง -->
     <h1>Lottery Generator</h1>
     <button id="generate-lottery">สุ่มเลข</button>
     <p id="lottery-number"></p>
