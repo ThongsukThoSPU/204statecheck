@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo project</title>
-    <link rel="stylesheet" href="Demo.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Demo.css" />
+  </head>
+  <body>
     <!-- สร้างstateที่list -->
     <h2>Todo list</h2>
     <input id="todo-input" type="text" placeholder="เพิ่มงาน..." />
@@ -14,30 +14,66 @@
     <ul id="todo-list"></ul>
 
     <!-- บอกหน่วยกิต และระดับเกรด -->
-    <h2>Student Grade Calculator (JavaScript)</h2>
+    <!-- <h2>Student Grade Calculator (JavaScript)</h2>
     <div id="grade-input">
-        <input type="number" placeholder="คะแนนCSI101" id="CSI101"> <p id="1output"></p> <br>
-        <input type="number" placeholder="คะแนนCSI102" id="CSI102"> <p id="2output"></p> <br>
-        <input type="number" placeholder="คะแนนCSI203" id="CSI203"> <p id="3output"></p> <br>
-        <input type="number" placeholder="คะแนนCSI204" id="CSI204"> <p id="4output"></p> <br>
-        <input type="number" placeholder="คะแนนCSI305" id="CSI305"> <p id="5output"></p> <br>
-        <button onclick="calculateGPA()">คำนวณ</button>
+      <input type="number" placeholder="คะแนนCSI101" id="CSI101" />
+      <p id="1output"></p>
+      <br />
+      <input type="number" placeholder="คะแนนCSI102" id="CSI102" />
+      <p id="2output"></p>
+      <br />
+      <input type="number" placeholder="คะแนนCSI203" id="CSI203" />
+      <p id="3output"></p>
+      <br />
+      <input type="number" placeholder="คะแนนCSI204" id="CSI204" />
+      <p id="4output"></p>
+      <br />
+      <input type="number" placeholder="คะแนนCSI305" id="CSI305" />
+      <p id="5output"></p>
+      <br />
+      <button onclick="calculateGPA()">คำนวณ</button>
     </div>
-    <p id="gpa-result"></p>
+    <p id="gpa-result"></p> -->
+
+    <h2>Student Grade Calculator (JavaScript)</h2>
+<div id="grade-input">
+  <input type="number" placeholder="คะแนน CSI101 (3 หน่วยกิต)" id="CSI101" oninput="calculateGPA()" />
+  <p id="1output"></p>
+  <br />
+
+  <input type="number" placeholder="คะแนน CSI102 (3 หน่วยกิต)" id="CSI102" oninput="calculateGPA()" />
+  <p id="2output"></p>
+  <br />
+
+  <input type="number" placeholder="คะแนน CSI203 (4 หน่วยกิต)" id="CSI203" oninput="calculateGPA()" />
+  <p id="3output"></p>
+  <br />
+
+  <input type="number" placeholder="คะแนน CSI204 (2 หน่วยกิต)" id="CSI204" oninput="calculateGPA()" />
+  <p id="4output"></p>
+  <br />
+
+  <input type="number" placeholder="คะแนน CSI305 (3 หน่วยกิต)" id="CSI305" oninput="calculateGPA()" />
+  <p id="5output"></p>
+  <br />
+
+  <button onclick="calculateGPA()">คำนวณ</button>
+</div>
+
+<h3>ผลลัพธ์</h3>
+<p id="gpa-result"></p>
 
     <h2>API fetching</h2>
     <ul id="user-list"></ul>
 
-
     <!-- สร้างช่องผลลัพ6ช่อง ล็อคได้ทุกช่อง -->
     <h1>Lottery Generator</h1>
+    <input type="text" id="user-number" placeholder="กรอกเลข 6 หลัก" />
     <button id="generate-lottery">สุ่มเลข</button>
-    <p id="lottery-number"></p>
-    <input id="user-number" type="text" placeholder="ป้อนเลข 6 หลัก" />
-    <button id="check-lottery">ตรวจสอบ</button>
+    <div id="lottery-number"></div>
+    <button id="check-lottery">ตรวจหวย</button>
     <p id="lottery-result"></p>
-    
 
     <script src="Demo.js"></script>
-</body>
+  </body>
 </html>
