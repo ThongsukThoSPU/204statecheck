@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo project</title>
+    <link rel="stylesheet" href="Demo.css">
+</head>
+<body>
+    <h2>Todo list</h2>
+    <input id="todo-input" type="text" placeholder="เพิ่มงาน..." />
+    <button onclick="addTodo()">เพิ่ม</button>
+    <ul id="todo-list"></ul>
+
+    <h2>Student Grade Calculator (JavaScript)</h2>
+    <div id="grade-input">
+        <input type="number" placeholder="คะแนนCSI101" id="CSI101"> <br>
+        <input type="number" placeholder="คะแนนCSI102" id="CSI102"> <br>
+        <input type="number" placeholder="คะแนนCSI203" id="CSI203"> <br>
+        <input type="number" placeholder="คะแนนCSI204" id="CSI204"> <br>
+        <input type="number" placeholder="คะแนนCSI305" id="CSI305"> <br>
+        <button onclick="calculateGPA()">คำนวณ</button>
+    </div>
+    <p id="gpa-result"></p>
+
+    <h2>API fetching</h2>
+    <ul id="user-list"></ul>
+
+    <h1>Lottery Generator</h1>
+    <button id="generate-lottery">สุ่มเลข</button>
+    <p id="lottery-number"></p>
+    <input id="user-number" type="text" placeholder="ป้อนเลข 6 หลัก" />
+    <button id="check-lottery">ตรวจสอบ</button>
+    <p id="lottery-result"></p>
+    
+
+    <script src="Demo.js"></script>
+</body>
+</html>

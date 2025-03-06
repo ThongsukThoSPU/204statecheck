@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+        <h2>Element Event</h2>
+    <div>
+      <button onclick="changeBG()">เปลี่ยนสีพื้นหลัง</button>
+    </div>
+    <hr />
+    <h2>ปฎิสัมพันธ์</h2>
+    <div>
+      <img
+        src="./pic/Mr.Hman.jpg"
+        width="100"
+        id="myImage"
+        alt="นายหมาน"
+        onclick="changeclick()"
+        onmouseover="flip()"
+        onmouseleave="resetFlip()"
+      />
+    </div>
+    &nbsp;
+    <div>
+      <div>
+        <input type="text" onkeyup="pressSpace()" id="text" />
+      </div> &nbsp;
+      <div>
+        <button id="showText">แสดงข้อความ</button>
+        <p id="showHere"></p>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Form</h2>
+    <div>
+      <form id="myForm">
+        <input type="text" id="email" placeholder="กรุณากรอกอีเมล" required/>
+        <button type="submit">ส่ง</button>
+      </form> &nbsp;
+      <p id="mailoutput"></p> &nbsp;
+    </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>
